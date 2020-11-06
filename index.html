@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TicTacToe</title>
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Mukta:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<div id="overlay" class="hide">
+		<div id="winWindow">
+			<p id="winMessage">Player 1 wins</p>
+			<div id="winButton">NEW GAME</div>
+		</div>
+	</div>
+	<div id="noNameWarning" class="hide" style="text-align: center;"><p>Please enter some names!</p></div>
+	<div id="sameNameWarning" class="hide" style="text-align: center;"><p>Please enter different names!</p></div>
+	<div id="players">
+		<span id="player1">
+			<label for="inputPlayer1">Player One Name</label>
+			<input type="text" id="inputPlayer1" maxlength="8">
+		</span>
+		<span id="player2">
+			<label for="inputPlayer2">Player Two Name</label>
+			<input type="text" id="inputPlayer2" maxlength="8">
+		</span>
+	</div>
+	<div id="startButton">START</div>
+	<div id="gameBoardContainer" class="visibility">
+		<div id="square0" class="gameSquare noSelect"></div>
+		<div id="square1" class="gameSquare noSelect"></div>
+		<div id="square2" class="gameSquare noSelect"></div>
+		<div id="square3" class="gameSquare noSelect"></div>
+		<div id="square4" class="gameSquare noSelect"></div>
+		<div id="square5" class="gameSquare noSelect"></div>
+		<div id="square6" class="gameSquare noSelect"></div>
+		<div id="square7" class="gameSquare noSelect"></div>
+		<div id="square8" class="gameSquare noSelect"></div>
+	</div>
+	
+	
+<script src="script.js"></script>
+</body>
+</html>

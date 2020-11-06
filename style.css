@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Acme;
+	background: #f0f0f0;
+}
+
+h1 {
+	height: 50px;
+	padding:  10px 50px 0 50px;
+	color: #fdfdfd;
+	background: #2f2f2f;
+}
+
+#gameBoardContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 130px);
+	grid-gap: 2px;
+	width: 400px;
+	margin: 0 auto;
+	font-size: 100px;
+	font-family: 'Alef', sans-serif;
+	text-align: center;
+}
+
+#players {
+	justify-content: space-between;
+	display: flex;
+	width: 500px;
+	margin: 30px auto;
+}
+
+#players input {
+	width: 120px;
+}
+
+#startButton {
+	color: #f0f0f0;
+	display: flex;
+	width: 100px;
+	height: 40px;
+	background: #243E6D;
+	border-radius: 3px;
+	border: solid 2px black;
+	margin: 20px auto;
+	justify-content: center;
+	align-items: center;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#winWindow {
+	text-align: center;
+	width: 200px;
+	height: 100px;
+	background: #A4A9A7;
+	border: solid 2px #3D322C;
+	border-radius: 6px;
+	margin: 100px auto;
+}
+
+#winButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 30px;
+	margin: 0 auto;
+	color:  #f0f0f0;
+	background: #282244;
+	border-radius: 5px;
+}
+
+#winButton:hover, #startButton:hover {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.visibility {
+	visibility: hidden;
+}
+
+.gameSquare {
+	width: 130px;
+	height: 130px;
+	background: #C0C0C0;
+}
+
+.gameSquare:hover {
+	background: lightgrey;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
