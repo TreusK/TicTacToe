@@ -8,6 +8,8 @@ let winMessage = document.querySelector('#winmessage');
 let noName = document.querySelector('#noNameWarning');
 let sameName = document.querySelector('#sameNameWarning');
 
+let turnp1 = document.querySelector('#player1');
+let turnp2 = document.querySelector('#player2');
 let p1 = document.querySelector('#inputPlayer1');
 let p2 = document.querySelector('#inputPlayer2');
 
@@ -103,6 +105,8 @@ let play = (function(toggle) {
 		overlay.classList.add('hide');
 		turn = false;
 		gameBoard.display();
+		turnp2.classList.remove('blue');
+		turnp1.classList.remove('red');
 	};
 	
 	return {player, resetAll};
@@ -122,6 +126,13 @@ for (let elem of squares) {
 		if (elem.innerText == '') {
 			let id = elem.id.slice(6);
 			turn = !turn;
+			if(!turn) {
+				turnp2.classList.remove('blue');
+				turnp1.classList.add('red');
+			} else {
+				turnp2.classList.add('blue');
+				turnp1.classList.remove('red');
+			}
 			(turn) ? elem.style.color = '#F13D36' : elem.style.color = '#47A5CB';
 			gameBoard.changeArr(id, turn);
 			gameBoard.display();

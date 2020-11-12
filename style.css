@@ -101,6 +101,14 @@ h1 {
 	background: lightgrey;
 }
 
+.red {
+	border-bottom: 4px solid #F13D36;
+}
+
+.blue {
+	border-bottom: 4px solid #47A5CB;
+}
+
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
